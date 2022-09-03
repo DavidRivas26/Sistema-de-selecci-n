@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/toastr/toastr.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <section class="row justify-content-center">
+        <div id="main-container" class="col-6">
+            <div class="card mt-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-2 p-2">
+                      <li class="breadcrumb-item active" aria-current="page">Datos</li>
+
+                    </ol>
+                </nav>
+            </div>
+            <div class="card mt-2">
+                <div class="card-header text-white bg-dark">
+                    <h4 class="text-center">Realice su selección</h4>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                    <h4 class="text-center">Complete toda la informacion</h4>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="provincia" class="form-label">Provincia:</label>
+                        <input type="text" class="form-control" id="provincia" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="cuidad" class="form-label">Cuidad:</label>
+                        <input type="text" class="form-control" id="cuidad" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="sector" class="form-label">Sector:</label>
+                        <input type="text" class="form-control" id="sector" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="calle" class="form-label">Calle:</label>
+                        <input type="text" class="form-control" id="calle" />
+                    </div>
+                    <div id="radio-container" class="mb-3">
+                        <label for="Carrera" class="form-label">Carrera:</label>
+                        
+                        <br>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Carrera" id="radio-multimedia" value="multimedia"/>
+                            <label class="form-check-label" for="radio-multimedia" >Multimedia</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Carrera" id="radio-software" value="software"/>
+                            <label class="form-check-label" for="radio-software">Software</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Carrera" id="radio-redes" value="redes"/>
+                            <label class="form-check-label" for="radio-redes">Redes</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary" id="btn-save">Guardar</button>
+                    <button type="button" class="btn btn-outline-warning" id="btn-clear">Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/js/toastr/toastr.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+</body>
+</html>
